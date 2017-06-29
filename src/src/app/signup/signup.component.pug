@@ -1,0 +1,19 @@
+div.signup
+  div
+    input(type="text", name="user_id", placeholder="User ID", [(ngModel)]="user_id")
+  div
+    input(type="password", name="passwd", placeholder="Password", [(ngModel)]="passwd")
+  div
+    input(type="password", name="chkPasswd", placeholder="Check Password", [(ngModel)]="chkPasswd")
+  div
+    input(type="text", name="user_name", placeholder="Username", [(ngModel)]="user_name")
+  div
+    input(type="text", name="birth", placeholder="1900-01-01", [(ngModel)]="birth")
+  div
+    input(type="text", name="gender", placeholder="남/여", [(ngModel)]="gender")
+  div
+    input(type="text", name="phone", placeholder="010-1234-5678", [(ngModel)]="phone")
+  div
+    input(type="text", name="email", placeholder="email@email.com", [(ngModel)]="email")
+  div
+    button(type="button", (click)="signup()") Sign Up

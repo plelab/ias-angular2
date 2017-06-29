@@ -1,0 +1,14 @@
+div.local-login
+  div
+    label User ID :
+    input(type="text", name="user_id", [(ngModel)]="user_id")
+  div
+    label Password :
+    input(type="password", name="passwd", [(ngModel)]="passwd")
+  div
+    button((click)="signin()") Login
+
+form(action="/api/sampleFacebookPassport", method="POST", ngNoForm)
+  input(type="submit", value="Facebook Login")
+
+div.res

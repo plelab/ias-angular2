@@ -1,0 +1,51 @@
+/* Rename [config-sample.json] -> [config.json] */
+
+{
+  "express": {
+    /* Setting Your Port Information */
+    "port": 80
+  },
+  "session": {
+    /* Setting Your Session Information */
+    "secret": "sEcReT",
+    "resave": false,
+    "saveUninitialized": true
+  },
+  "redis": {
+    /* Setting Your Redis Information */
+    "host": "127.0.0.1",
+    "port": 6379
+  },
+  "mysql": {
+    /* Setting Your Database Information */
+    "connectionLimit": 100,
+    "host": "127.0.0.1",
+    "port": "3306",
+    "user": "your_user",
+    "password": "your_password",
+    "database": "your_database",
+    "debug": false,
+    "use": false
+  },
+  "mongo": {
+    /* Setting Your Database Information */
+    "host": "mongodb://127.0.0.1",
+    "port": "27017",
+    "database": "your_database",
+    "use": true
+  },
+  "file": {
+    /* Setting Your File Upload Information */
+    "destination": "/path/to/your/file/destination",
+    "fileLimit": 100,
+    "fileSizeLimit": 1073741824
+  },
+  "auth": {
+    /* Setting Your Facebook App Information */
+    "facebook": {
+      "clientID": "0000",
+      "clientSecret": "00000000",
+      "callbackURL": "/path/to/your/callback/url"
+    }
+  }
+}

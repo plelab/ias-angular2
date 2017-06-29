@@ -1,0 +1,20 @@
+div
+  input(type="text", id="host", placeholder="127.0.0.1", [(ngModel)]="host")
+div
+  input(type="text", id="port", placeholder="27018", [(ngModel)]="port")
+div
+  button((click)="connect()") Connect
+
+div.connect_res
+  p {{connectRes}}
+
+div
+  input(type="text", id="msg", placeholder="Message", [(ngModel)]="msg")
+div
+  button((click)="sendMessage()") Send Message
+
+div.send_res
+  p {{sendRes}}
+
+div.recv_res
+  p {{recvRes}}

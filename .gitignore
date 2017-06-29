@@ -1,0 +1,8 @@
+.DS_STORE
+.idea
+.ias
+npm-debug.log
+config.json
+node_modules
+www
+src/src/assets/libs
